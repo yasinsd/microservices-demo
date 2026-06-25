@@ -1,3 +1,25 @@
+# OzLabs Microservices Demo
+
+This is a fork of the [Google Cloud Platform Microservices Demo](https://github.com/GoogleCloudPlatform/microservices-demo),
+modified and maintained to serve as the sample application for **OzLabs**, a modular AWS security lab environment.
+
+## Why this exists
+
+OzLabs demonstrates Code-to-Cloud security with Wiz. To show how a change in source code surfaces as a finding
+in your cloud, you need an application *you control* — one whose commits flow into *your* AWS account and whose
+container lineage Wiz can trace from repository to running workload. This polyglot microservices app is a
+realistic, multi-language target for exactly that story.
+
+## How to use it
+
+1. **Fork this repository** into your own GitHub account.
+2. Deploy the OzLabs lab (see the main [OzLabs](https://github.com/yasinsd/ozlabs) repo). When you enable the
+   Code-to-Cloud scenario, the lab points its build pipeline at *your* fork.
+3. Edit the source, push, and watch the change build and deploy into your cluster — then observe how Wiz
+   connects the dotted line from your commit to the cloud resource.
+
+> This fork tracks upstream where practical. It is intended for **lab and demonstration use**, not production.
+
 <!-- <p align="center">
 <img src="/src/frontend/static/icons/Hipster_HeroLogoMaroon.svg" width="300" alt="Online Boutique" />
 </p> -->
